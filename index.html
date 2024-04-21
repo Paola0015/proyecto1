@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-commer</title>
     <link
@@ -11,7 +10,7 @@
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="bg-grey">
       <div class="container border-bottom">
         <div class="row-header-2 padding-tb-10">
           <div class="col-header-3 logo">
@@ -65,15 +64,17 @@
             <p>+54-1198765431</p>
           </div>
           <div class="d-none header-search-form col-header-4 search">
-            <form action="#" method="GET" class="search-form">
+            <form class="search-form">
               <input
                 type="text"
                 autocomplete="off"
                 name="search"
                 placeholder="Buscar..."
               />
-              <button type="submit">
-                <span class="material-symbols-outlined">search</span>
+              <button data-nav="7" class="nav-a btn-search" type="submit">
+                <span data-nav="7" class="material-symbols-outlined"
+                  >search</span
+                >
               </button>
             </form>
           </div>
@@ -92,16 +93,62 @@
         </div>
       </div>
     </header>
-    <main id="contenedor-externo">
-      <div class="container">
-        <div class="row">
-          <p>sadasdasdasd</p>
-        </div>
-      </div>
-    </main>
+    <main></main>
     <footer>
       <div class="container">
-        <p>Derechos de autor © 2022 E-commer. Todos los derechos reservados.</p>
+        <div class="row row-footer">
+          <div class="footer-div-content">
+            <h4 class="label">Integrantes</h4>
+            <ul>
+              <li>
+                <label>Alejandro Bencomo</label>
+              </li>
+              <li>
+                <label>Paola</label>
+              </li>
+              <li>
+                <label>Paula</label>
+              </li>
+              <li>
+                <label>Pablo</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Información</h4>
+            <ul>
+              <li><a>Preguntas frecuentes</a></li>
+              <li><a>Rastreo de orden</a></li>
+              <li><a>Envío y Entrega</a></li>
+              <li><a>Historial de pedidos</a></li>
+              <li><a>Búsqueda Avanzada</a></li>
+              <li><a>Ventas corporativas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Más Vendido</h4>
+            <ul>
+              <li><a>Zapatos</a></li>
+              <li><a>Jeasn</a></li>
+              <li><a>Camisas</a></li>
+              <li><a>Perfumes</a></li>
+              <li><a>Camperas</a></li>
+              <li><a>Carteras</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Suscríbete</h4>
+            <p>
+              Obtenga toda la información más reciente sobre eventos, ventas y
+              ofertas. Suscríbete al boletín:
+            </p>
+            <input type="text" data-subsc placeholder="Email" />
+            <a class="btn btn-danger btn-suscribir">Suscribir</a>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/class.ecommer.js"></script>

@@ -8,6 +8,7 @@ class Ecommer {
     { id: 4, name: "contact_us" },
     { id: 5, name: "register" },
     { id: 6, name: "login" },
+    { id: 7, name: "search" },
   ];
   constructor() {
     const toggle = document.querySelector(".show-menu");
@@ -54,6 +55,7 @@ class Ecommer {
       event.preventDefault();
       const link = event.target;
       const next = await this.#verificar_nav(link.getAttribute("data-nav"));
+
       link.classList.add("active");
       this.#conteiner(next);
     } catch (err) {
@@ -74,7 +76,7 @@ class Ecommer {
     try {
       await this.#send(url);
     } catch (err) {
-      await this.#send("main");
+      await this.#send("home");
     }
   };
   #send = function (xurl) {
