@@ -419,6 +419,17 @@ footer {
 .flex-center {
   justify-content: center;
 }
+
+.pao-flex {
+  flex-grow: 1;
+
+  color: #002f97;
+
+  background-color: #0079c8;
+
+  padding: 6%;
+}
+
 .grip-columns-auto-1 {
   display: grid;
   grid-template-columns: auto;
