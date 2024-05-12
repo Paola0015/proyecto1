@@ -3,7 +3,7 @@
     <!--  dsfsdfdsf  -->
     
 <style>
-  .class1_contact_us{
+  .class_contact_us{
     background-image: url(/img/fondohexagonos.jpg);
     
   }
@@ -19,13 +19,26 @@
           <label for="Nombre"><h5>Nombre:</h5></label>
           <input type="text" name="Nombre" id="Nombre" required minlength="3" />
         </div>
+
         <div>
           <label for="Email"><h5>Email: <h5></h5></label>
-          <input type="email" name="Email" id="Email" required minlength="5" />
+          <input type="email" name="Email" id="Email" required minlength="5" placeholder="nombre@gmail.com" />
+        </div>
+        <div>
+          <h5>Tu consulta es por una compra que realizaste</h5>
+          <label for="si">si</label>
+          <input type="radio" name="acepta" id="si">
+
+          <label for="no">no</label>
+          <input type="radio" name="acepta" id="no">
         </div>
         <div>
           <label for="Mensaje"><h5>Mensaje:</h5></label>
           <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <h5>Ingrese una imagen (opcional)</h5>
+          <input type="file" name="imagen" id="imagen">
         </div>
         <button type="submit">Enviar</button>
       </form>
