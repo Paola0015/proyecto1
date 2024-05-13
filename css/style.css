@@ -419,6 +419,17 @@ footer {
 .flex-center {
   justify-content: center;
 }
+
+.pao-flex {
+  flex-grow: 1;
+
+  color: #002f97;
+
+  background-color: #0079c8;
+
+  padding: 6%;
+}
+
 .grip-columns-auto-1 {
   display: grid;
   grid-template-columns: auto;
@@ -967,4 +978,50 @@ strong {
   }
   .footer-div-content {
   }
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.class1 {
+  text-align: center;
+}
+
+.paola-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paola-flex {
+  flex: 1;
+}
+
+.paola-background {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.paola-background1 {
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+h4 {
+  color: #666;
+}
+
+p {
+  line-height: 1.6;
 }
