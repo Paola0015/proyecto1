@@ -564,7 +564,20 @@ footer {
   background-attachment: fixed;
   filter: opacity(0.8);
 }
-
+.background-cover2 {
+  background-image: url("../img/amigos.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(0.8);
+}
+.background-cover3 {
+  background-image: url("../img/amigos2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(0.8);
+}
 .flex-tow {
   display: flex;
   flex-wrap: wrap;
