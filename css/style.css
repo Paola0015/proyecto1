@@ -419,6 +419,7 @@ footer {
 .flex-center {
   justify-content: center;
 }
+
 .grip-columns-auto-1 {
   display: grid;
   grid-template-columns: auto;
@@ -661,6 +662,10 @@ strong {
   grid-template-columns: 50% 50%;
 }
 
+.class_contact_us {
+  background-image: url(../img/fondohexagonos.jpg);
+}
+
 .flex-register {
   display: flex;
   flex-direction: column;
@@ -726,6 +731,7 @@ strong {
   width: 10em;
   margin-bottom: 1em;
 }
+
 @media only screen and (max-width: 1100px) {
   .flex-tow {
     display: flex;
@@ -1096,4 +1102,44 @@ strong {
   }
   .footer-div-content {
   }
+}
+
+.pao-row {
+  margin-bottom: 20px;
+}
+
+.pao-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.pao-background1 {
+  background-color: #81aac4;
+}
+
+.pao-background2 {
+  background-color: #82aec9;
+}
+
+.pao-background3 {
+  background-color: #9ab0e0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col1 {
+  padding: 1em;
+}
+.col2 img {
+  width: 20em;
 }
