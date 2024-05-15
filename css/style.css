@@ -1103,19 +1103,15 @@ strong {
   .footer-div-content {
   }
 }
-
 .pao-row {
   margin-bottom: 20px;
 }
-
 .pao-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 5px;
 }
-
 .pao-background1 {
   background-color: #81aac4;
 }
@@ -1123,15 +1119,9 @@ strong {
 .pao-background2 {
   background-color: #82aec9;
 }
-
 .pao-background3 {
   background-color: #9ab0e0;
 }
-
-p {
-  line-height: 1.6;
-}
-
 .col2 {
   display: flex;
   align-items: center;
@@ -1142,4 +1132,7 @@ p {
 }
 .col2 img {
   width: 20em;
+}
+p {
+  line-height: 1.6;
 }
