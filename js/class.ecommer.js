@@ -10,6 +10,7 @@ class Ecommer {
     { id: 6, name: "login" },
     { id: 7, name: "search" },
   ];
+
   constructor() {
     const toggle = document.querySelector(".show-menu");
     const toggleCancel = document.querySelector(".toggle-cancel");
@@ -75,9 +76,23 @@ class Ecommer {
   #conteiner = async function (url) {
     try {
       await this.#send(url);
+      await this.#config_nav(url);
     } catch (err) {
       await this.#send("home");
     }
+  };
+  #config_nav = function (url) {
+    return new Promise((rest, err) => {
+      switch (url) {
+        case "register":
+          new form_register();
+          rest(true);
+          break;
+        default:
+          rest(true);
+          break;
+      }
+    });
   };
   #send = function (xurl) {
     return new Promise((rest, err) => {
@@ -89,16 +104,16 @@ class Ecommer {
           this.#contenedor.innerHTML = xhr.responseText;
           rest(true);
         } else {
-          err("Error al cargar el contenido:", xhr.statusText);
+          reject("Error al cargar el contenido: " + xhr.statusText);
         }
       };
       xhr.onerror = () => {
-        err("Error de red al cargar el contenido.");
+        reject("Error de red al cargar el contenido.");
       };
       xhr.send();
-      rest(true);
     });
   };
+
   showSearch = function () {
     const biSearch = document.querySelector(".b-i-search");
     const search = document.querySelector(".search");
