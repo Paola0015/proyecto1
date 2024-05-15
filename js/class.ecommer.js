@@ -111,6 +111,27 @@ class Ecommer {
     }
   };
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   const ecommer = new Ecommer();
 });
+
+var nombre = document.getElementById("nombre");
+var email = document.getElementById("Email");
+var mensaje = document.getElementById("mensaje");
+var error = document.getElementById("error");
+function enviarformulario(params) {
+  console.log("enviando formulario...");
+  var mensajesError = [];
+  if (nombre.value == null || nombre.value == "") {
+    mensajesError.push("ingresa tu nombre");
+  }
+
+  if (email.value == null || email.value == "") {
+    mensajesError.push("ingresa tu email");
+  }
+
+  error.innerHTML = mensajesError.join(", ");
+
+  return false;
+}
