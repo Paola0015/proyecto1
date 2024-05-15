@@ -672,6 +672,11 @@ strong {
   grid-template-columns: 50% 50%;
 }
 
+
+.class_contact_us {
+  background-image: url(../img/fondohexagonos.jpg);
+}
+
 .flex-register {
   display: flex;
   flex-direction: column;
@@ -737,6 +742,7 @@ strong {
   width: 10em;
   margin-bottom: 1em;
 }
+
 @media only screen and (max-width: 1100px) {
   .flex-tow {
     display: flex;
