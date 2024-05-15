@@ -662,7 +662,6 @@ strong {
   grid-template-columns: 50% 50%;
 }
 
-
 .class_contact_us {
   background-image: url(../img/fondohexagonos.jpg);
 }
@@ -1104,29 +1103,15 @@ strong {
   .footer-div-content {
   }
 }
-
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.class1 {
-  text-align: center;
-}
-
 .pao-row {
   margin-bottom: 20px;
 }
-
 .pao-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
   border-radius: 5px;
 }
-
 .pao-background1 {
   background-color: #81aac4;
 }
@@ -1134,16 +1119,20 @@ strong {
 .pao-background2 {
   background-color: #82aec9;
 }
-
 .pao-background3 {
   background-color: #9ab0e0;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.col1 {
+  padding: 1em;
+}
+.col2 img {
+  width: 20em;
+}
 p {
   line-height: 1.6;
 }
