@@ -2,52 +2,67 @@
   <div class="row">
     <!--  dsfsdfdsf  -->
 
-    <div class="class_contact_us">
-      <h2>Contactenos</h2>
-      <form
-        action="https://formsubmit.co/rodriguezpaula091@gmail.com"
-        method="post"
-      >
-        <div class="nombre">
-          <label for="Nombre">Nombre:</label>
-          <input type="text" name="nombre" id="name" required minlength="3" />
-        </div>
+    <div class="class_contact_us register">
+      <div>
+        <h2>Contactenos</h2>
+        <form
+          action="https://formsubmit.co/rodriguezpaula091@gmail.com"
+          method="post"
+        >
+          <div class="nombre form-group">
+            <label for="Nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              id="name"
+              required
+              minlength="3"
+              placeholder="Escribe tu nombre"
+              autocomplete="off"
+            />
+          </div>
 
-        <div>
-          <label for="Email">Email: </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            minlength="5"
-            placeholder="nombre@gmail.com"
-          />
-        </div>
-        <div>
-          <h5>Tu consulta es por una compra que realizaste</h5>
-          <label for="si">si</label>
-          <input type="radio" name="acepta" id="si" />
+          <div class="EmailContact form-group">
+            <label for="Email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              minlength="5"
+              placeholder="nombre@gmail.com"
+            />
+          </div>
+          <div>
+            <h5>Tu consulta es por una compra que realizaste</h5>
+            <label for="si">si</label>
+            <input type="radio" name="acepta" id="si" />
 
-          <label for="no">no</label>
-          <input type="radio" name="acepta" id="no" />
-        </div>
-        <div>
-          <label for="Mensaje">Mensaje:</label>
-          <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-          <h5>Ingrese una imagen (opcional)</h5>
-          <input type="file" name="imagen" id="imagen" />
-        </div>
+            <label for="no">no</label>
+            <input type="radio" name="acepta" id="no" />
+          </div>
+          <div class="Mensajes form-group">
+            <label for="Mensaje">Mensaje:</label>
+            <textarea
+              name="Mensaje"
+              id="Mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div>
+            <h5>Ingrese una imagen (opcional)</h5>
+            <input type="file" name="imagen" id="imagen" />
+            <p>Solo se permiten JPG o PNG</p>
+          </div>
 
-        <div class="button">
-          <button type="submit" onclick=" return enviarformulario()">
-            Enviar
-          </button>
-        </div>
-      </form>
-      <div id="error"></div>
+          <div class="button">
+            <button class="btn btn-danger" type="submit ">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
       <h2>Visitenos</h2>
 
       <h5>
@@ -58,9 +73,9 @@
       <div class="class_contact_mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7153028898147!2d-58
-    .460553925149114!3d-34.56076305522933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-    1!3m3!1m2!1s0x95bcb5d57291a551%3A0xdc926ce46782fe56!2sGaler%C3%ADa%20Las%20Vegas!
-    5e0!3m2!1ses-419!2sad!4v1714735401136!5m2!1ses-419!2sad"
+  .460553925149114!3d-34.56076305522933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+  1!3m3!1m2!1s0x95bcb5d57291a551%3A0xdc926ce46782fe56!2sGaler%C3%ADa%20Las%20Vegas!
+  5e0!3m2!1ses-419!2sad!4v1714735401136!5m2!1ses-419!2sad"
           width="1000"
           height="450"
           allowfullscreen=""
