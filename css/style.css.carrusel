@@ -1,57 +1,64 @@
 /*Carrusel Pablo*/
-.carrusel{
-  /*Este es el contenedor del carrusel*/
-  position: relative;
-  width: 70%;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 15px;
-  overflow: hidden;
-}
-.frame{
-  /*es 400% porque son 4 fotos*/
-  width: 400%;
-  display: flex;
+.carrusel {
+    /*Este es el contenedor del carrusel*/
+    position: relative;
+    width: 70%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.slider_section{
-  width: calc(100% / 4);
-  /*Se calcual el acho de una sola foto que va en el 100% del contenedor carrusel*/
-  border-radius: 15px;
-  
+.frame {
+    /*es 400% porque son 4 fotos*/
+    width: 400%;
+    display: flex;
 }
-.slider_section img{
-  /* Atributos de cada imagen*/
-  width: 100%;
-  border-radius: 15px;
+
+.slider_section {
+    width: calc(100% / 4);
+    /*Se calcual el acho de una sola foto que va en el 100% del contenedor carrusel*/
+    border-radius: 15px;
+
+
 }
+
+.slider_section img {
+    /* Atributos de cada imagen*/
+    width: 100%;
+    border-radius: 15px;
+}
+
 .boton_izquierdo,
-.boton_derecho{
-  /*Atributos y posicionamiento de los botones*/
-  display: flex;
-  position: absolute;
-  top: 50%;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border-radius: 50%;
-  padding: 5px;
-  font-weight: 800;
-  cursor: pointer;
-  color: #ffffff;
-  transform: translate(0,-50%);
-  transition: .5s ease;
-  user-select: none;
+.boton_derecho {
+    /*Atributos y posicionamiento de los botones*/
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
 }
-.boton_derecho{
-  /* Lo coloco a al derecha*/
-  right: 10px;
+
+.boton_derecho {
+    /* Lo coloco a al derecha*/
+    right: 10px;
 }
-.boton_izquierdo{
-  /* Y este a la izquierda*/
-  left: 10px;
+
+.boton_izquierdo {
+    /* Y este a la izquierda*/
+    left: 10px;
 }
+
 .boton_izquierdo:hover,
-.boton_derecho:hover{
-  /* Cambio los atributos cuando  me posiciono encima de algun boton */
-  background-color: #503e3ed4;
-  color: white;
+.boton_derecho:hover {
+    /* Cambio los atributos cuando  me posiciono encima de algun boton */
+    background-color: #503e3ed4;
+    color: white;
 }
