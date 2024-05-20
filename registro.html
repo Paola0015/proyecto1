@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-grey">
+      <div class="container border-bottom">
+        <div class="row-header-2 padding-tb-10">
+          <div class="col-header-3 logo">
+            <a data-nav="1" class="img-logo nav-a">
+              <img src="img/logo.png" alt="Logo" />
+              <span>EClick</span>
+            </a>
+            <div class="toggle">
+              <span class="material-symbols-outlined b-i-search"> search </span>
+              <span
+                data-nav="6"
+                class="material-symbols-outlined b-i-person nav-a"
+              >
+                person
+              </span>
+              <span class="material-symbols-outlined imaterial show-menu">
+                menu
+              </span>
+            </div>
+          </div>
+
+          <nav class="nav-bar">
+            <ul>
+              <li class="li-toggle">
+                <div class="toggle-cancel">
+                  <span class="material-symbols-outlined imaterial">
+                    close
+                  </span>
+                </div>
+              </li>
+              <li class="li-nav">
+                <a data-nav="1" class="li-a active">Home</a>
+              </li>
+              <li class="li-nav"><a data-nav="2" class="li-a">Nosotros</a></li>
+              <!-- <li class="li-nav"><a data-nav="3" class="li-a">Servicios</a></li> -->
+              <li class="li-nav"><a data-nav="4" class="li-a">Contacto</a></li>
+              <li class="li-nav d-block">
+                <a data-nav="6" class="li-a">Inicio de sesión</a>
+              </li>
+              <li class="li-nav d-block">
+                <a data-nav="5" class="li-a">Regístrate</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container border-bottom header-search">
+        <div class="row-header-1 padding-tb-5">
+          <div class="col-header-1 d-none">
+            <span class="material-symbols-outlined">phone</span>
+            <p>+54-1198765431</p>
+          </div>
+          <div class="d-none header-search-form col-header-4 search">
+            <form class="search-form">
+              <input
+                type="text"
+                autocomplete="off"
+                name="search"
+                placeholder="Buscar..."
+              />
+              <button data-nav="7" class="nav-a btn-search" type="submit">
+                <span data-nav="7" class="material-symbols-outlined"
+                  >search</span
+                >
+              </button>
+            </form>
+          </div>
+          <div class="col-header-2 d-none">
+            <div class="nav-bar-login">
+              <ul>
+                <li class="li-nav li-login">
+                  <a data-nav="5" class="nav-sigin strong nav-a">Regístrate </a>
+                </li>
+                <li class="li-nav li-login">
+                  <a data-nav="6" class="nav-login strong nav-a">Login </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container background-cover3">
+        <div class="class1"></div>
+      </div>
+      <div class="container">
+        <div id="register-status" class="row">
+          <div class="register class1">
+            <div class="flex-register form1">
+              <h2>Registrate!</h2>
+              <form id="registro-usuario">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <div class="ew ew-email"></div>
+                  <input
+                    id="email"
+                    type="text"
+                    name="email"
+                    minlength="5"
+                    class="input-form"
+                    placeholder="Ingresa tu Email"
+                    data-validate="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <div class="ew ew-password"></div>
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    minlength="3"
+                    class="input-form"
+                    placeholder="Ingresa tu password"
+                    data-validate="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="foto">Foto</label>
+                  <div class="ew ew-foto"></div>
+                  <input
+                    id="foto"
+                    type="file"
+                    name="foto"
+                    class="input-form"
+                    data-validate="true"
+                    accept="image/png, image/jpeg"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <div class="ew ew-nombre"></div>
+                  <input
+                    id="nombre"
+                    type="text"
+                    name="nombre"
+                    minlength="3"
+                    class="input-form"
+                    placeholder="Ingresa tu Nombre"
+                    data-validate="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido</label>
+                  <div class="ew ew-apellido"></div>
+                  <input
+                    id="apellido"
+                    name="apellido"
+                    type="text"
+                    minlength="3"
+                    class="input-form"
+                    placeholder="Ingresa tu apellido"
+                    data-validate="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Télefono</label>
+                  <div class="ew ew-telefono"></div>
+                  <input
+                    id="telefono"
+                    type="text"
+                    name="telefono"
+                    maxlength="10"
+                    minlength="3"
+                    class="input-form"
+                    placeholder="Ingresa tu telefono 11********"
+                    data-validate="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="dirección">Dirección</label>
+                  <div class="ew ew-dirección"></div>
+                  <textarea
+                    id="dirección"
+                    name="dirección"
+                    minlength="3"
+                    class="input-form"
+                    data-validate="true"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="select_tipos">¿Quién te hablo de nosotros?</label>
+
+                  <select
+                    name="select_tipos"
+                    id="select_tipos"
+                    class="input-form"
+                    data-validate="true"
+                  >
+                    <option value="">Selecciona una opción</option>
+                  </select>
+                  <div class="ew ew-select_tipos"></div>
+                </div>
+                <div class="form-group">
+                  <h3>Cuentanos</h3>
+                  <p>¿Qué tipo de productos te interesan de nuestra web?</p>
+                  <div class="ew ew-radio"></div>
+                  <div class="form-group">
+                    <div class="elements">
+                      <div>
+                        <input
+                          class="input-form"
+                          name="radio"
+                          type="radio"
+                          id="pcd"
+                          data-validate="true"
+                        />
+                      </div>
+                      <div>
+                        <label for="pcd">Computadora Escritorio</label>
+                      </div>
+                    </div>
+                    <div class="elements">
+                      <div>
+                        <input
+                          class="input-form"
+                          name="radio"
+                          type="radio"
+                          id="laptop"
+                          data-validate="true"
+                        />
+                      </div>
+                      <div>
+                        <label for="laptop">Laptops</label>
+                      </div>
+                    </div>
+                    <div class="elements">
+                      <div>
+                        <input
+                          class="input-form"
+                          name="radio"
+                          type="radio"
+                          id="speaker"
+                          data-validate="true"
+                        />
+                      </div>
+                      <div>
+                        <label for="speaker">Speaker</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="terminos"> </label>
+                  <div class="elements">
+                    <div>
+                      <input
+                        class="input-form"
+                        name="terminos"
+                        id="terminos"
+                        type="checkbox"
+                        data-validate="true"
+                      />
+                    </div>
+                    <div>He leído y acepto los términos</div>
+                    <div class="ew ew-terminos"></div>
+                  </div>
+                </div>
+                <div class="form-submit">
+                  <button
+                    type="submit"
+                    form="registro-usuario"
+                    class="btn btn-danger"
+                  >
+                    Registrar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="flex-register form2">
+              <h2>Bienvenidos!</h2>
+              <p>
+                Regístrate en nuestro portal y consigue las mejores ofertas en
+                nuestros productos. Hazte miembro de nuestra comunidad en eClick
+                y accede a exclusivos descuentos y promociones. Únete hoy mismo
+                y aprovecha todos los beneficios de pertenecer a eClick.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container wave2">
+        <div class="class2 separador">
+          <h1 class="animate-transform-opacity-down">Marcas</h1>
+          <p class="animate-transform-opacity-down">
+            Lorem ipsum dolor sit amet consectetur adipisicing itaque?
+          </p>
+        </div>
+      </div>
+      <div class="container bg-grey">
+        <div class="row">
+          <div class="class1 flex-four">
+            <div class="animate-transform-opacity-down">
+              <img alt="amd" class="img" src="img/amd.png" />
+            </div>
+            <div class="animate-transform-opacity-down">
+              <img alt="intel" class="img" src="img/intel.png" />
+            </div>
+            <div class="animate-transform-opacity-down">
+              <img alt="nvidia" class="img" src="img/nvidia.png" />
+            </div>
+            <div class="animate-transform-opacity-down">
+              <img alt="dell" class="img" src="img/dell.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container background-cover3">
+        <div class="class1"></div>
+      </div>
+      <div class="container wave1">
+        <div class="class2 separador animate-abajo-arriba"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="class1 flex-tree">
+            <div class="img-section animate-transform-opacity-left">
+              <img alt="pc2" class="img-articulos" src="img/pc2.png" />
+            </div>
+            <div class="text-izquierda-lista">
+              <h2>Contáctanos</h2>
+              <p>¡Descubre la potencia que necesitas!</p>
+              <p>
+                Explora nuestra amplia selección de hardware de PC: desde
+                procesadores de última generación hasta tarjetas gráficas de
+                alto rendimiento. ¡Optimiza tu experiencia de juego y trabajo
+                con lo mejor en tecnología!
+              </p>
+              <a class="btn btn-danger">Contáctanos ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row row-footer">
+          <div class="footer-div-content">
+            <h4 class="label">Integrantes</h4>
+            <ul>
+              <li>
+                <label>Alejandro Bencomo</label>
+              </li>
+              <li>
+                <label>Paola</label>
+              </li>
+              <li>
+                <label>Paula</label>
+              </li>
+              <li>
+                <label>Pablo</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Información</h4>
+            <ul>
+              <li><a>Preguntas frecuentes</a></li>
+              <li><a>Rastreo de orden</a></li>
+              <li><a>Envío y Entrega</a></li>
+              <li><a>Historial de pedidos</a></li>
+              <li><a>Búsqueda Avanzada</a></li>
+              <li><a>Ventas corporativas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Más Vendido</h4>
+            <ul>
+              <li><a>Zapatos</a></li>
+              <li><a>Jeasn</a></li>
+              <li><a>Camisas</a></li>
+              <li><a>Perfumes</a></li>
+              <li><a>Camperas</a></li>
+              <li><a>Carteras</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-div-content">
+            <h4 class="label">Suscríbete</h4>
+            <p>
+              Obtenga toda la información más reciente sobre eventos, ventas y
+              ofertas. Suscríbete al boletín:
+            </p>
+            <input type="text" data-subsc placeholder="Email" />
+            <a class="btn btn-danger btn-suscribir">Suscribir</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
