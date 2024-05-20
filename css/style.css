@@ -419,6 +419,7 @@ footer {
 .flex-center {
   justify-content: center;
 }
+
 .grip-columns-auto-1 {
   display: grid;
   grid-template-columns: auto;
@@ -564,7 +565,20 @@ footer {
   background-attachment: fixed;
   filter: opacity(0.8);
 }
-
+.background-cover2 {
+  background-image: url("../img/amigos.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(0.8);
+}
+.background-cover3 {
+  background-image: url("../img/amigos2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(0.8);
+}
 .flex-tow {
   display: flex;
   flex-wrap: wrap;
@@ -578,7 +592,7 @@ footer {
 }
 .text-principal {
   justify-content: flex-end;
-  overflow: hidden;
+  padding: 0px 30px;
 }
 .text-principal div {
   flex: 1;
@@ -643,11 +657,88 @@ strong {
   flex-grow: 1;
   margin-top: 1em;
 }
-
+.register {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 .class_contact_us {
   background-image: url(../img/fondohexagonos.jpg);
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.padd3 {
+  padding: 2em;
+}
+
+.class_contact_mapa {
+  width: 100%;
+  height: 450px;
+}
+.flex-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em;
+}
+.flex-register form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-group label {
+  padding: 0.5em 0;
+  font-weight: bold;
+}
+.input-form {
+  padding: 8px 8px;
+  font-size: 1em;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group .elements {
+  flex: 1;
+  display: flex;
+  flex-direction: flex;
+  flex-wrap: 0.3em;
+  direction: ltr;
+}
+.form-group .elements > * {
+  padding: 0.5em;
+}
+
+.form-submit {
+  margin-top: 3em;
+  text-align: center;
+}
+.ew {
+  color: red;
+  padding: 1%;
+  transition: 3s;
+}
+.checkregister {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkregister div {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.checkregister img {
+  width: 10em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -732,7 +823,7 @@ strong {
     line-height: 1.5;
   }
   .text-izquierda-lista p {
-    text-align: right;
+    text-align: center;
   }
   .text-derecha-lista {
     text-align: center;
@@ -757,12 +848,6 @@ strong {
   }
 }
 @media only screen and (max-width: 768px) {
-  .class_contact_us {
-    background-image: url(../img/fondohexagonos.jpg);
-    display: grid;
-    grid-template-columns: auto;
-  }
-
   .row {
     margin: 0 auto;
   }
@@ -897,8 +982,53 @@ strong {
   }
   .footer-div-content {
   }
+  .search .search-form {
+    padding: 0 1em;
+    display: flex;
+    flex-grow: 1;
+    transition: 0.2s;
+    justify-content: flex-end;
+  }
+  .register {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .flex-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+  }
+  .flex-register form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form-group label {
+    text-align: left;
+    padding: 0.5em 0;
+  }
+  .input-form {
+    width: 100%;
+    flex: 1;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .form2 {
+    grid-row: 1;
+    text-align: center;
+  }
+  .form1 {
+    grid-row: 2;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .flex-tow {
     display: flex;
     flex-direction: column;
@@ -916,6 +1046,8 @@ strong {
     display: list-item;
     text-align: center;
   }
+}
+@media only screen and (max-width: 500px) {
   .image-principal .img {
     width: 80%;
     max-width: 550px;
@@ -937,7 +1069,7 @@ strong {
     justify-content: center;
   }
   .search .search-form {
-    padding: 0.3em 0.3em;
+    padding: 0 1em;
     display: flex;
     flex-grow: 1;
     transition: 0.2s;
@@ -979,4 +1111,108 @@ strong {
   }
   .footer-div-content {
   }
+}
+
+.pao-row {
+  margin-bottom: 20px;
+}
+
+.pao-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.pao-background1 {
+  background-color: #81aac4;
+}
+
+.pao-background2 {
+  background-color: #82aec9;
+}
+
+.pao-background3 {
+  background-color: #9ab0e0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col1 {
+  padding: 1em;
+}
+.col2 img {
+  width: 20em;
+}
+/*Carrusel Pablo*/
+.carrusel {
+  /*Este es el contenedor del carrusel*/
+  position: relative;
+  width: 70%;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.frame {
+  /*es 400% porque son 4 fotos*/
+  width: 400%;
+  display: flex;
+}
+
+.slider_section {
+  width: calc(100% / 4);
+  /*Se calcual el acho de una sola foto que va en el 100% del contenedor carrusel*/
+  border-radius: 15px;
+}
+.slider_section img {
+  /* Atributos de cada imagen*/
+  width: 100%;
+  border-radius: 15px;
+}
+.boton_izquierdo,
+.boton_derecho {
+  /*Atributos y posicionamiento de los botones*/
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #ffffff;
+  transform: translate(0, -50%);
+  transition: 0.5s ease;
+  user-select: none;
+}
+.boton_derecho {
+  /* Lo coloco a al derecha*/
+  right: 10px;
+}
+.boton_izquierdo {
+  /* Y este a la izquierda*/
+  left: 10px;
+}
+.boton_izquierdo:hover,
+.boton_derecho:hover {
+  /* Cambio los atributos cuando  me posiciono encima de algun boton */
+  background-color: #503e3ed4;
+  color: white;
+}
+
+ /* renders */
+a[href] {
+   
+    color: inherit;
+    text-decoration: none;
+   
 }
