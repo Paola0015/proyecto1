@@ -6,5 +6,6 @@
     "número",
     "teléfono",
     "válido"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
